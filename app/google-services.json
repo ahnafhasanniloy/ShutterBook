@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "187546868647",
+    "project_id": "shutterbook-6",
+    "storage_bucket": "shutterbook-6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187546868647:android:3eec1f48a48e5cbe223482",
+        "android_client_info": {
+          "package_name": "com.cse.shutterbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxFBeTrngkc1fQbgtQXyTwuyXFBnZejUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

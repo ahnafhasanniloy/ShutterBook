@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSignupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photographer Signup"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:drawableStart="@android:drawable/ic_menu_call"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:drawableStart="@android:drawable/ic_menu_mylocation"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Categories:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkboxWedding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding"/>
+
+        <EditText
+            android:id="@+id/etWeddingCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wedding Cost"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etWeddingHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wedding Shooting Hours"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox
+            android:id="@+id/checkboxBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"/>
+
+        <EditText
+            android:id="@+id/etBirthdayCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday Cost"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etBirthdayHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday Shooting Hours"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox
+            android:id="@+id/checkboxOutdoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outdoor Shoot"/>
+
+        <EditText
+            android:id="@+id/etOutdoorCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Outdoor Cost"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etOutdoorHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Outdoor Shooting Hours"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp"/>
+
+        <CheckBox
+            android:id="@+id/checkboxEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event"/>
+
+        <EditText
+            android:id="@+id/etEventCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Cost"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEventHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Shooting Hours"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience (years)"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etAboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:hint="About Me"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:id="@+id/passwordToggle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@android:drawable/ic_lock_idle_lock"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:id="@+id/confirmPasswordToggle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

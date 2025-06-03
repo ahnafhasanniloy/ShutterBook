@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background"
+            android:padding="16dp"
+            android:src="@drawable/ic_profile_placeholder" />
+
+        <TextView
+            android:id="@+id/photographer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ahnaf"
+            android:textColor="#77C9E7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/photographer_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ahnaf@gmail.com"
+            android:textColor="#2E003E"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/btn_update_profile"
+            layout="@layout/item_settings_option"
+            android:drawableLeft="@drawable/ic_update_profile"
+            android:tag="Update Profile Information" />
+
+        <include
+            android:id="@+id/btn_customer_care"
+            layout="@layout/item_settings_option"
+            android:drawableLeft="@drawable/ic_customer_service"
+            android:tag="Customer Care Service" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#802218"
+        android:text="Sign Out"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/default_user"
+            android:background="@drawable/circle_background"
+            android:padding="16dp" />
+
+        <TextView
+            android:id="@+id/client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahnaf"
+            android:textColor="#673AB7"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/client_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ahnaf@gmail.com"
+            android:textColor="#4A148C"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <include layout="@layout/item_settings_option"
+            android:id="@+id/btn_update_profile"
+            android:tag="Update Profile Information"
+            android:drawableLeft="@drawable/ic_update_profile" />
+
+        <include layout="@layout/item_settings_option"
+            android:id="@+id/btn_booked_photographers"
+            android:tag="My bookings"
+            android:drawableLeft="@drawable/ic_camera" />
+
+
+        <include layout="@layout/item_settings_option"
+            android:id="@+id/btn_customer_care"
+            android:tag="Customer Care Service"
+            android:drawableLeft="@drawable/ic_customer_service" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_logout"
+        android:drawablePadding="8dp"
+        android:padding="12dp" />
+</LinearLayout>

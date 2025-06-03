@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9FB"
+    android:padding="16dp"
+    tools:context=".CustomerCareActivity">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Customer Support"
+        android:textColor="#77C9E7"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="FAQs?"
+        android:textColor="#77C9E7"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/faqTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:lineSpacingExtra="6dp"
+        android:paddingBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#77C9E7"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:text=" Email Us"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#77C9E7"
+        android:drawableLeft="@drawable/ic_call"
+        android:drawablePadding="8dp"
+        android:text=" Call Us"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+  </LinearLayout>
+</ScrollView>
